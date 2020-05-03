@@ -1,98 +1,98 @@
 * {
-    padding: 0;
-    margin: 0;
-    background-color: rgb(252, 248, 228);
+  padding: 0;
+  margin: 0;
+  background-color: rgb(252, 248, 228);
 }
 header {
-    margin: 70px 250px 0px 250px;
-    padding-bottom: 60px;
+  margin: 70px 250px 0px 250px;
+  padding-bottom: 60px;
 }
 .trans {   
 
 }
 .circle {
-    margin-top: 50px;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    animation-name: pic;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
+  margin-top: 50px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation-name: pic;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
 }
 .name {
-    float: left;
-    font-size: 140%;
+  float: left;
+  font-size: 140%;
 }
 .nav {
-    float: right;
-    padding-top: 3px;
-    font-size: 130%;
+  float: right;
+  padding-top: 3px;
+  font-size: 130%;
 }
 a {
-    color: rgb(10, 8, 8);
-    text-transform: uppercase;
-    text-decoration: none;
-    
-    display: inline-block;
-    position: relative;
-  }
-  a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: rgb(0, 0, 0);
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+  color: rgb(10, 8, 8);
+  text-transform: uppercase;
+  text-decoration: none;
+  
+  display: inline-block;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(0, 0, 0);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
 
-  #description {
-    font-size: 140%;
-    font-family: "Trebuchet MS", Times, serif;
-    margin: 0 30px 0 30px;
-  }
-  .parentdesc {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-  }
-  footer {
-    width: 100%;
-    bottom: 0;
-    position: fixed;
+#description {
+  font-size: 140%;
+  font-family: "Trebuchet MS", Times, serif;
+  margin: 0 30px 0 30px;
+}
+.parentdesc {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-top: 30px;
+}
+footer {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 .share-btn {
-  display: inline-block;
-  color: #ffffff;
-  border: none;
-  padding: 0.1em 0.6em;
-  outline: none;
-  text-align: center;
-  font-size: 0.9em;
-  margin: 0 0.2em;
+display: inline-block;
+color: #ffffff;
+border: none;
+padding: 0.1em 0.6em;
+outline: none;
+text-align: center;
+font-size: 0.9em;
+margin: 0 0.2em;
 }
 
 .share-btn:focus,
 .share-btn:hover {
-  text-decoration: none;
-  opacity: 0.8;
+text-decoration: none;
+opacity: 0.8;
 }
 
 .share-btn:active {
-  color: #e2e2e2;
+color: #e2e2e2;
 }
 
 
@@ -102,28 +102,63 @@ a {
 
 
 
-  @keyframes pic {
-      from {width: 0px;}
-      to {width: 350px}
+@keyframes pic {
+    from {width: 0px;}
+    to {width: 350px}
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+
+  header {
+      margin: 70px 70px 0px 70px;
+  }
+  .circle {
+    margin-top: 25px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: pic;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
   }
 
+  @media screen and (max-width: 600px) {
 
-
-
-  @media screen and (max-width: 768px) {
-
-    header {
-        margin: 70px 100px 0px 100px;
+      header {
+          margin: 70px 100px 0px 100px;
+      }
+      .name {
+          float: left;
+          font-size: 110%;
+      }
+      .nav {
+          float: right;
+          padding-top: 3px;
+          font-size: 100%;
+      }
+      #description {
+        font-size: 100%;
+        font-family: "Trebuchet MS", Times, serif;
+        margin: 0 30px 0 30px;
+      }
+      @keyframes pic {
+        from {width: 0px;}
+        to {width: 270px}
+    }
+    .circle {
+      margin-top: 20px;
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      animation-name: pic;
+      animation-duration: 1.2s;
+      animation-fill-mode: forwards;
     }
 
-
-
-
-
-
-
-
-
-
-
+      
   }
